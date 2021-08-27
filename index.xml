@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 26 May 2021 22:52:53 +0200</lastBuildDate><atom:link href="https://grgcmz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://grgcmz.github.io/about/</link>
+      <pubDate>Tue, 24 Aug 2021 19:24:00 +0200</pubDate>
+      
+      <guid>https://grgcmz.github.io/about/</guid>
+      <description>Hi there!
+My name is Giorgio and I am a student and software developer from Switzerland.
+I am passionate about the free and open source software movement and privacy.
+I love linux, photography and split keyboards.</description>
+    </item>
+    
+    <item>
       <title>Securing your Online Accounts with Bitwarden</title>
       <link>https://grgcmz.github.io/posts/passwords/</link>
       <pubDate>Wed, 26 May 2021 22:52:53 +0200</pubDate>
