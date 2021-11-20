@@ -5,6 +5,25 @@
     <link>https://grgcmz.github.io/categories/</link>
     <description>Recent content in Categories on Giorgio Camozzi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grgcmz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 10:15:38 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>opinion</title>
+      <link>https://grgcmz.github.io/categories/opinion/</link>
+      <pubDate>Sat, 20 Nov 2021 10:15:38 +0100</pubDate>
+      
+      <guid>https://grgcmz.github.io/categories/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guides</title>
+      <link>https://grgcmz.github.io/categories/guides/</link>
+      <pubDate>Wed, 26 May 2021 22:52:53 +0200</pubDate>
+      
+      <guid>https://grgcmz.github.io/categories/guides/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

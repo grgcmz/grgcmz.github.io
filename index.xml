@@ -6,17 +6,24 @@
     <description>Recent content on Giorgio Camozzi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 May 2021 22:52:53 +0200</lastBuildDate><atom:link href="https://grgcmz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Nov 2021 10:15:38 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Personal Tech Setup for 2021/2022</title>
+      <link>https://grgcmz.github.io/posts/personal-tech/</link>
+      <pubDate>Sat, 20 Nov 2021 10:15:38 +0100</pubDate>
+      
+      <guid>https://grgcmz.github.io/posts/personal-tech/</guid>
+      <description>I always enjoy reading about what other people use on a day to day basis. I think it&amp;rsquo;s entertaining but also interesting to see and sometimes provides a good learning opportunity. In this short article I will go into all the computers, peripherals and software I use on a daily basis and tell you my opinion about them.
+Laptops    As I am always working in different places, moving between lectures, work and coffee shops, I do not own a desktop computer.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://grgcmz.github.io/about/</link>
       <pubDate>Tue, 24 Aug 2021 19:24:00 +0200</pubDate>
       
       <guid>https://grgcmz.github.io/about/</guid>
-      <description>Hi there!
-My name is Giorgio and I am a student and software developer from Switzerland.
-I am passionate about the free and open source software movement and privacy.
-I love linux, photography and split keyboards.</description>
+      <description>My name is Giorgio. I am a computer scientist from Switzerland. I am passionate about the free and open source software movement and digital privacy. I am a big fan of many things, among which are linux, photography and ergonomic keyboards (this one in particular). This website is a place for me to share my thoughts, technical guides and personal projects.</description>
     </item>
     
     <item>
@@ -26,16 +33,6 @@ I love linux, photography and split keyboards.</description>
       
       <guid>https://grgcmz.github.io/posts/passwords/</guid>
       <description>Securing your Online Accounts with Bitwarden    The combination of username and password has long been the standard way of authenticating users when they log into a website, service, etc. This combination is what keeps our personal messages with friends and family, our emails, our pictures and all the rest that is online from being accessed by everyone. They are the gatekeepers to our online presence which is why it is so important that they are secure.</description>
-    </item>
-    
-    <item>
-      <title>Coming Soon</title>
-      <link>https://grgcmz.github.io/posts/comingsoon/</link>
-      <pubDate>Tue, 25 May 2021 21:45:41 +0200</pubDate>
-      
-      <guid>https://grgcmz.github.io/posts/comingsoon/</guid>
-      <description>Hi there!    Welcome to my website. For now this blog is still very empty, but starting from the end of June, I will be writing more regularly.
-Stay tuned and see you soon!👋</description>
     </item>
     
   </channel>

@@ -5,6 +5,25 @@
     <link>https://grgcmz.github.io/tags/</link>
     <description>Recent content in Tags on Giorgio Camozzi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grgcmz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Nov 2021 10:15:38 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>privacy</title>
+      <link>https://grgcmz.github.io/tags/privacy/</link>
+      <pubDate>Sat, 20 Nov 2021 10:15:38 +0100</pubDate>
+      
+      <guid>https://grgcmz.github.io/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://grgcmz.github.io/tags/security/</link>
+      <pubDate>Sat, 20 Nov 2021 10:15:38 +0100</pubDate>
+      
+      <guid>https://grgcmz.github.io/tags/security/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
