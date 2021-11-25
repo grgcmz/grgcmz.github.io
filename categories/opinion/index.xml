@@ -13,8 +13,181 @@
       <pubDate>Sat, 20 Nov 2021 10:15:38 +0100</pubDate>
       
       <guid>https://grgcmz.github.io/posts/personal-tech/</guid>
-      <description>I always enjoy reading about what other people use on a day to day basis. I think it&amp;rsquo;s entertaining but also interesting to see and sometimes provides a good learning opportunity. In this short article I will go into all the computers, peripherals and software I use on a daily basis and tell you my opinion about them.
-Laptops    As I am always working in different places, moving between lectures, work and coffee shops, I do not own a desktop computer.</description>
+      <description>&lt;p&gt;I always enjoy reading about what other people use on a day to day basis. I think it&amp;rsquo;s entertaining but also interesting to see and sometimes provides a good learning opportunity. In this short article I will go into all the computers, peripherals and software I use on a daily basis and tell you my opinion about them.&lt;/p&gt;
+&lt;h1 id=&#34;laptops&#34;&gt;
+  Laptops
+  &lt;a class=&#34;heading-link&#34; href=&#34;#laptops&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;As I am always working in different places, moving between lectures, work and coffee shops, I do not own a desktop computer. I do all of my work on a laptop (actually, many laptops because I really like switching around). Here is a list of my main machines.&lt;/p&gt;
+&lt;h3 id=&#34;thinkpad-t14-gen-1&#34;&gt;
+  Thinkpad T14 Gen 1
+  &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-t14-gen-1&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;My main machine is a &lt;a href=&#34;https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14-amd-g1/22tpt14t4a2&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad T14 Gen 1 AMD&lt;/a&gt;
+. It has 32GB of RAM, a 1TB NVMe SSD, an 8 core AMD Ryzen chip and a 1080p screen. It has all the ports you would ever need in this day and age and the battery life is good. I have never tried Windows on this laptop, so I cannot attest to how well it works with it. On Linux, I have not had any problems really. Everything, including the fingerprint reader, microphone, camera and touchpad, worked out of the box. I am currently running &lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
+ on it, which might just be my favorite distro I have ever used. It is smooth, stable and polished. The touchpad gestures work well, it has a great release cycle and software is usually up to date. I am really happy with it and am not really missing something (besides photo and video editing software, which I am going to come to later). The only thing I really do not like about this laptop is the touchpad. It is awful. I used to be a mac user, so I have had a taste of the fancy fancy, but I have also tried an XPS 13 running Fedora 34 and the touchpad was so much better. It is not too much of a problem for me as I usually have my mouse with me everywhere anyway, but it is still an important thing to note.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_1.jpg&#34;
+         alt=&#34;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;macbook-pro-15-inch-mid-2015&#34;&gt;
+  MacBook Pro 15 inch, Mid 2015
+  &lt;a class=&#34;heading-link&#34; href=&#34;#macbook-pro-15-inch-mid-2015&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;I used to be a Mac user before switching to Linux about two years ago. This MacBook Pro is a great machine. The hardware is top notch, it has many ports, it is quite powerful for a 2015 laptop and still works great to this day. I am running it with the latest macOS Monterey and I am a bit of a sucker for the user interface to be honest. The reason why I have this laptop is that I am also a photographer and sometimes make videos. There are options on Linux such as &lt;a href=&#34;https://www.rawtherapee.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;RawTherapee&lt;/a&gt;
+ and &lt;a href=&#34;https://www.darktable.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Darktable&lt;/a&gt;
+ for photo editing, and &lt;a href=&#34;https://kdenlive.org/en/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kdenlive&lt;/a&gt;
+ for video editing. But coming from the Adobe suite of products, it is really hard to get along with these programs. They may be great if you are used to them, but I often feel very limited when using them. For video editing, there exists &lt;a href=&#34;https://www.blackmagicdesign.com/products/davinciresolve/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Davinci Resolve&lt;/a&gt;
+ which also has a Linux version (horay!), but sadly, for now, it does not work on AMD discrete graphics.&lt;/p&gt;
+&lt;h3 id=&#34;thinkpad-x230&#34;&gt;
+  Thinkpad X230
+  &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-x230&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.blackmagicdesign.com/products/davinciresolve/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad X230&lt;/a&gt;
+ is the newest addition to my collection of laptops. I bought it used for CHF 150. It came with 8GB of RAM, which I then upgraded to 16GB, an Intel i5-3220 CPU, 128GB of SATA III SSD storage (which I will upgrade as well) and the much nicer IPS panel (rather than the TN panel). It has a swedish keyboard, which I actually find quite cool, though I have it set to a US layout. I am planning on modding this laptop to use the &lt;a href=&#34;https://www.thinkwiki.org/wiki/Install_Classic_Keyboard_on_xx30_Series_ThinkPads&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;X220 classic keyboard&lt;/a&gt;
+ once I find an original one that does not cost as much as the laptop itself. I bought this laptop for three main reasons. The first one is the fact that it is just a really cool laptop in my opinion. The second is the fact that it is one of the few laptops that supports &lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
+ out of the box (read the section further down for more information). The third reason is that it is one of the few laptops supported by the &lt;a href=&#34;https://www.coreboot.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Coreboot&lt;/a&gt;
+ project (read more about this further down). Overall, this laptop has blown me away. It is a laptop from 2012 with a dual core CPU that cost less than the USB-C dock I use for my thinkpad. Still, it handles day to day usage no problem and all the virtualization needed to run Qubes OS. I have not tried it with a normal Linux distrubution yet, but I am sure that it will handle everything like a champ.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_3.jpg&#34;
+         alt=&#34;Corebooted Thinkpad X230 running Qubes OS and i3WM&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Corebooted Thinkpad X230 running Qubes OS and i3WM&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_2.jpg&#34;
+         alt=&#34;Closeup of the Thinkpad X230&amp;amp;rsquo;s swedish keyboard&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Closeup of the Thinkpad X230&amp;rsquo;s swedish keyboard&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&#34;peripherals&#34;&gt;
+  Peripherals
+  &lt;a class=&#34;heading-link&#34; href=&#34;#peripherals&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;I have had some problems with RSI and other posture related pain over the past couple of years. These are some peripherals that really helped me a lot.&lt;/p&gt;
+&lt;h3 id=&#34;logitech-mx-ergo-mouse&#34;&gt;
+  Logitech MX Ergo Mouse
+  &lt;a class=&#34;heading-link&#34; href=&#34;#logitech-mx-ergo-mouse&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;I love &lt;a href=&#34;https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.910-005178.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;this mouse&lt;/a&gt;
+. I will never go back to using a normal mouse, ever. The Logitech Ergo is an ergonomic mouse made to help with RSI. In short, with a ordinary mouse you have to move your entire wrist and forearm to operate it. This is bad for your arm and can cause you loads of pain. With a trackball, you move the cursor by moving the ball on the mouse. There are &lt;a href=&#34;https://www.dell.com/en-us/shop/trackman-marble-mouse/apd/a2538222/pc-accessories&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;some mice&lt;/a&gt;
+ that have the ball on the top of the mouse which you operate with your whole hand. The MX Ergo positions moves the trackball to the side and lets you move the cursor by rotating the ball with just your thumb. The mouse can be used in two positions: a more classic, flat position, and a tilted, more natural position (which I prefere). It is wireless but can be used with a USB receiver (which I have installed on my X230 since Qubes and bluetooth are no friends). I highly reccomend this mouse! I could not use my computer without it.&lt;/p&gt;
+&lt;h3 id=&#34;kinesis-advantage-2&#34;&gt;
+  Kinesis Advantage 2
+  &lt;a class=&#34;heading-link&#34; href=&#34;#kinesis-advantage-2&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://kinesis-ergo.com/shop/advantage2/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kinesis Advantage 2&lt;/a&gt;
+ is another ergnomic product made to improve your posture while typing. By splitting the keyboard, it enables you to keep a good posture and keep your hands shoulder width apart. It places many frequently used keys (e.g. space, enter, backspace, etc.) in two thumb clusters, enabling you to use these strong, but otherwise not very much used digits more often while typing. The keys are placed ortholinearly and the keywells are concave, enabling your fingers to lie in a more natural position and eliminating pronation. The keyboard is also programmable, so you can remap any key to whichever key you like and create macros. I use it with a modified US layout, but would like to learn dvorak in the future. This keyboard is very expensive, but if you suffer from RSI like me, it is well worth it in my opinion. There is a new version coming out at the end of 2021 called the &lt;a href=&#34;https://kinesis-ergo.com/adv360/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kinesis Advantage 360&lt;/a&gt;
+. It is very much the same keywells, but in a truly split design and apparently even more programmable. If you can, I would wait for that one to be released as it looks like it is going to be a great product.&lt;/p&gt;
+&lt;h3 id=&#34;monitor&#34;&gt;
+  Monitor
+  &lt;a class=&#34;heading-link&#34; href=&#34;#monitor&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Sadly, I do not have an external monitor as I do not have a fixed office. Whenever I can, I just use some books to raise my laptop so that I can sit more upright and keep a good posture.&lt;/p&gt;
+&lt;h1 id=&#34;other-tech&#34;&gt;
+  Other Tech
+  &lt;a class=&#34;heading-link&#34; href=&#34;#other-tech&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h3 id=&#34;google-pixel-4a&#34;&gt;
+  Google Pixel 4a
+  &lt;a class=&#34;heading-link&#34; href=&#34;#google-pixel-4a&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;My phone of choice is a Google Pixel 4a. I really do not like Google. I think they have too much power and are too big of a monopoly. They also do very questionable things. Sadly, their phones are the only ones supported by projects such as &lt;a href=&#34;https://calyxos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Calyx OS&lt;/a&gt;
+ and &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
+, which is why I have one (read more about Calyx OS in the section below). It is a great phone overall. It&amp;rsquo;s not as expensive as many other phones nowadays, it has a great camera and is fast enough for my needs.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_4.jpg&#34;
+         alt=&#34;Google Pixel 4a running Calyx OS&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Google Pixel 4a running Calyx OS&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;ipad-pro-2018&#34;&gt;
+  iPad Pro 2018
+  &lt;a class=&#34;heading-link&#34; href=&#34;#ipad-pro-2018&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;I bought the iPad Pro for uni a couple of years ago and it is a good piece of hardware and software. The Apple Pen work great, the battery life is good and the screen is really nice. I have been using it less and less lately though and I would like to get rid of it. It still comes in handy from time to time, especially for uni. Maybe I&amp;rsquo;ll sell it after university as I don&amp;rsquo;t like the closed nature of iPad OS.&lt;/p&gt;
+&lt;h1 id=&#34;noteworthy-operating-systems&#34;&gt;
+  Noteworthy Operating Systems
+  &lt;a class=&#34;heading-link&#34; href=&#34;#noteworthy-operating-systems&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h3 id=&#34;fedora-34-gnome&#34;&gt;
+  Fedora 34 Gnome
+  &lt;a class=&#34;heading-link&#34; href=&#34;#fedora-34-gnome&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
+ is my current distro of choice and the one I would reccomend to pretty much anyone (unless you have an Nvidia GPU, then just get &lt;a href=&#34;https://pop.system76.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Pop!_OS&lt;/a&gt;
+). It&amp;rsquo;s super easy to use, it has good software selection, it is always up to date, it has 6 month release cycle and 13 months of support for each release. Red Hat, the company behind Fedora, seems to be doing a lot of things right in my opinion. They listen to the community, push a lot of new technologies to the Linux desktop (such as Wayland, Btrfs and Pipewire) and work with OEMs to bring Linux to the &amp;ldquo;masses&amp;rdquo;. Fedora uses Wayland as it&amp;rsquo;s default display server protocol, which is great, and it comes in many different flavors, such as Gnome, KDE and XFCE. I personally use the Gnome Desktop Environment as I think it looks good out of the box, it&amp;rsquo;s stable and requires no faffing around. It simply works and lets you work.&lt;/p&gt;
+&lt;h3 id=&#34;qubes-os&#34;&gt;
+  Qubes OS
+  &lt;a class=&#34;heading-link&#34; href=&#34;#qubes-os&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
+ is a big topic which I would like to cover in a future blog post. I&amp;rsquo;ll try to keep it short for now. If you don&amp;rsquo;t know Qubes OS, it is a security focused operating system that uses compartimentalization through virtualization (that&amp;rsquo;s a mouth full!). What this basically means, is that Qubes uses many virtual machines (virtual computers running on your main OS) to separate various parts of your life. These VMs are all sandboxed environments that can be persistent (like where you store your personal or work files) or disposable (like where you would open a shady email attachment or surf the web). This makes your computer much more secure in theory, as it keeps all the parts of your life separated one from the other and a virus downloaded while browsing the web would not have access to your whole computer with your private files. There is much more to it, but I&amp;rsquo;ll leave it at that for now.&lt;/p&gt;
+&lt;p&gt;Qubes OS as it is today is not for your average computer user as it requires quite a bit of technical understanding to use as a daily machine. This is one of the reasons why I wanted to try it out in the first place. My plan is to learn bit by bit how to use it and create guides as I go that are hopefully also easy to follow for non-technical users. I think non-technical users are often the ones that would benefit the most from such an OS. Here I am thinking of activists, laywers, politicians, or other people with a stricter threat model.&lt;/p&gt;
+&lt;p&gt;Though for me this OS goes far beyond my threat model, I am really enjoying using it on a daily basis and might even switch to it full time. There is something to compartimentalizing everything. If it&amp;rsquo;s not for security reasons, it can also be to separate work and personal life and maybe remove some distractions. Weirdly enough, there is just such simplicity in, for example, having your filesystem only show you personal files when you are in your personal VM and only work files in your work VM. Watch out for future reviews and updates.&lt;/p&gt;
+&lt;h3 id=&#34;calyx-os&#34;&gt;
+  Calyx OS
+  &lt;a class=&#34;heading-link&#34; href=&#34;#calyx-os&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This is one of my favorite things in the world right now. Calyx OS is a degoogled version of Android that is avialable for Google Pixel phones (which is kind of paradoxical but actually makes total sense). It maintains the security model of stock android (not improving on it like, for example, &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
+ does) but removes all/most proprietary bits that talk to google. It offers a great commandline installer that is super easy to use and gives you one click installs during the first boot to install, among other things, &lt;a href=&#34;https://microg.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;MicroG&lt;/a&gt;
+ (alternative to Google&amp;rsquo;s GSM), Signal, Fdroid and Aurora Store. There is a Matrix chat with the developers where you can ask questions if you get stuck somewhere or have a bug or so, and is backed by a non-profit foundation called the Calyx institute. If you wish to learn more about the Calyx Institute and &lt;a href=&#34;https://calyxos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Calyx OS&lt;/a&gt;
+, head over to &lt;a href=&#34;https://calyx.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Calyx.org&lt;/a&gt;
+ to learn more.&lt;/p&gt;
+&lt;h3 id=&#34;skulls&#34;&gt;
+  Skulls
+  &lt;a class=&#34;heading-link&#34; href=&#34;#skulls&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;While not an operating system in and of itself, &lt;a href=&#34;https://github.com/merge/skulls&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Skulls&lt;/a&gt;
+ enables to boot into operating systems, hence I included it into this post. Skulls makes it easier to flash coreboot onto supported thinkpad devices. There are very few devices supported, one of which is the X230. Coreboot is an opensource, minimal bootloader which also gives you the possibilty to neuter the &lt;a href=&#34;https://en.wikipedia.org/wiki/Intel_Management_Engine&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Intel Management Engine&lt;/a&gt;
+. The Skulls project basically provides pre-built images of coreboot for specific laptop models. I have flashed my X230 with Skulls and have not had any problem whatsoever for now. If you are interested, there is a jailbreak called 1vyrain that enables Xx30 Series Thinkpads to be flashed without specialized hardware flashers (i.e. only using software), which is what I did. Find out more &lt;a href=&#34;https://github.com/n4ru/1vyrain/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;here&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;final-words&#34;&gt;
+  Final words
+  &lt;a class=&#34;heading-link&#34; href=&#34;#final-words&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I hope you enjoyed reading about my personal tech setup. If you have any questions please feel free to contact me via email by taking this website&amp;rsquo;s subdomain at pm dot me.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
