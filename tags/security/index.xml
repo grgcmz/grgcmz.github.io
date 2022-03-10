@@ -6,7 +6,91 @@
     <description>Recent content in security on Giorgio Camozzi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Nov 2021 10:15:38 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 19:01:09 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NMAP Cheatsheet</title>
+      <link>https://grgcmz.github.io/posts/nmap/</link>
+      <pubDate>Wed, 02 Mar 2022 19:01:09 +0100</pubDate>
+      
+      <guid>https://grgcmz.github.io/posts/nmap/</guid>
+      <description>&lt;h1 id=&#34;general&#34;&gt;
+  General
+  &lt;a class=&#34;heading-link&#34; href=&#34;#general&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;This is just a little cheatsheet I created for myself about NMAP. It will be updated as I learn more about this tool.&lt;/p&gt;
+&lt;h2 id=&#34;1-scan-types&#34;&gt;
+  1 Scan Types
+  &lt;a class=&#34;heading-link&#34; href=&#34;#1-scan-types&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id=&#34;11-tcp-connect-scans&#34;&gt;
+  1.1 TCP Connect Scans
+  &lt;a class=&#34;heading-link&#34; href=&#34;#11-tcp-connect-scans&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Command: &lt;code&gt;nmap -sN&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;performs three-way handshake with each target port -&amp;gt; depending on response, determines if the port is open&lt;/li&gt;
+&lt;li&gt;Responses are either
+&lt;ul&gt;
+&lt;li&gt;RST: Port is closed&lt;/li&gt;
+&lt;li&gt;SYN/ACK: Port is open (sends ACK back)&lt;/li&gt;
+&lt;li&gt;No response: Port is filtered (firewall drops packets -&amp;gt; could be set to reject packets with tcp-reset, which makes a scan less effective)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;12-tcp-syn-scans&#34;&gt;
+  1.2 TCP SYN Scans
+  &lt;a class=&#34;heading-link&#34; href=&#34;#12-tcp-syn-scans&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Command: &lt;code&gt;sudo nmap -sN&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Similar to TCP Scan, but sends a RST back instead of ACK&lt;/li&gt;
+&lt;li&gt;aka. stealth scans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can bypass older IDS&amp;rsquo;s that look for 3-way handhsake&lt;/li&gt;
+&lt;li&gt;Often not logged by applications listening on open ports (they usually log only fully established connections)&lt;/li&gt;
+&lt;li&gt;faster than TCP scans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;require sudo&lt;/li&gt;
+&lt;li&gt;might crash unstable services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;13-udp-scans&#34;&gt;
+  1.3 UDP Scans
+  &lt;a class=&#34;heading-link&#34; href=&#34;#13-udp-scans&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Command: &lt;code&gt;nmap -sU&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stateless -&amp;gt; send packages and hope that it works&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;14-firewall-evasion&#34;&gt;
+  1.4 Firewall Evasion
+  &lt;a class=&#34;heading-link&#34; href=&#34;#14-firewall-evasion&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows systems drop ICMP packages per default -&amp;gt; Ping doesn&amp;rsquo;t work&lt;/li&gt;
+&lt;li&gt;We can use &lt;code&gt;-Pn&lt;/code&gt; flag to not bother pinging the host -&amp;gt; inefficient if host really is not alive&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt; can be used to break up packets -&amp;gt; less likely to be detected by firewall or IDS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--scan-delay &amp;lt;time&amp;gt;ms&lt;/code&gt; to add a delay&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--badsum&lt;/code&gt; generates an invalid Checksup for the packet -&amp;gt; Used to detect presence of firewall or IDS&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
     <item>
       <title>My Personal Tech Setup for 2021/2022</title>
       <link>https://grgcmz.github.io/posts/personal-tech/</link>
