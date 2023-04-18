@@ -6,91 +6,7 @@
     <description>Recent content in security on Giorgio Camozzi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Mar 2022 19:01:09 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>NMAP Cheatsheet</title>
-      <link>https://grgcmz.github.io/posts/nmap/</link>
-      <pubDate>Wed, 02 Mar 2022 19:01:09 +0100</pubDate>
-      
-      <guid>https://grgcmz.github.io/posts/nmap/</guid>
-      <description>&lt;h1 id=&#34;general&#34;&gt;
-  General
-  &lt;a class=&#34;heading-link&#34; href=&#34;#general&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h1&gt;
-&lt;p&gt;This is just a little cheatsheet I created for myself about NMAP. It will be updated as I learn more about this tool.&lt;/p&gt;
-&lt;h2 id=&#34;1-scan-types&#34;&gt;
-  1 Scan Types
-  &lt;a class=&#34;heading-link&#34; href=&#34;#1-scan-types&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h2&gt;
-&lt;h3 id=&#34;11-tcp-connect-scans&#34;&gt;
-  1.1 TCP Connect Scans
-  &lt;a class=&#34;heading-link&#34; href=&#34;#11-tcp-connect-scans&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;Command: &lt;code&gt;nmap -sN&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;performs three-way handshake with each target port -&amp;gt; depending on response, determines if the port is open&lt;/li&gt;
-&lt;li&gt;Responses are either
-&lt;ul&gt;
-&lt;li&gt;RST: Port is closed&lt;/li&gt;
-&lt;li&gt;SYN/ACK: Port is open (sends ACK back)&lt;/li&gt;
-&lt;li&gt;No response: Port is filtered (firewall drops packets -&amp;gt; could be set to reject packets with tcp-reset, which makes a scan less effective)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;12-tcp-syn-scans&#34;&gt;
-  1.2 TCP SYN Scans
-  &lt;a class=&#34;heading-link&#34; href=&#34;#12-tcp-syn-scans&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;Command: &lt;code&gt;sudo nmap -sN&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Similar to TCP Scan, but sends a RST back instead of ACK&lt;/li&gt;
-&lt;li&gt;aka. stealth scans&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Can bypass older IDS&amp;rsquo;s that look for 3-way handhsake&lt;/li&gt;
-&lt;li&gt;Often not logged by applications listening on open ports (they usually log only fully established connections)&lt;/li&gt;
-&lt;li&gt;faster than TCP scans&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;require sudo&lt;/li&gt;
-&lt;li&gt;might crash unstable services&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;13-udp-scans&#34;&gt;
-  1.3 UDP Scans
-  &lt;a class=&#34;heading-link&#34; href=&#34;#13-udp-scans&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h3&gt;
-&lt;p&gt;Command: &lt;code&gt;nmap -sU&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;stateless -&amp;gt; send packages and hope that it works&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;14-firewall-evasion&#34;&gt;
-  1.4 Firewall Evasion
-  &lt;a class=&#34;heading-link&#34; href=&#34;#14-firewall-evasion&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows systems drop ICMP packages per default -&amp;gt; Ping doesn&amp;rsquo;t work&lt;/li&gt;
-&lt;li&gt;We can use &lt;code&gt;-Pn&lt;/code&gt; flag to not bother pinging the host -&amp;gt; inefficient if host really is not alive&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-f&lt;/code&gt; can be used to break up packets -&amp;gt; less likely to be detected by firewall or IDS&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--scan-delay &amp;lt;time&amp;gt;ms&lt;/code&gt; to add a delay&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;--badsum&lt;/code&gt; generates an invalid Checksup for the packet -&amp;gt; Used to detect presence of firewall or IDS&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
+    <lastBuildDate>Sat, 20 Nov 2021 10:15:38 +0100</lastBuildDate><atom:link href="https://grgcmz.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Personal Tech Setup for 2021/2022</title>
       <link>https://grgcmz.github.io/posts/personal-tech/</link>
@@ -101,22 +17,23 @@
 &lt;h1 id=&#34;laptops&#34;&gt;
   Laptops
   &lt;a class=&#34;heading-link&#34; href=&#34;#laptops&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;As I am always working in different places, moving between lectures, work and coffee shops, I do not own a desktop computer. I do all of my work on a laptop (actually, many laptops because I really like switching around). Here is a list of my main machines.&lt;/p&gt;
 &lt;h3 id=&#34;thinkpad-t14-gen-1&#34;&gt;
   Thinkpad T14 Gen 1
   &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-t14-gen-1&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;My main machine is a &lt;a href=&#34;https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14-amd-g1/22tpt14t4a2&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad T14 Gen 1 AMD&lt;/a&gt;
 . It has 32GB of RAM, a 1TB NVMe SSD, an 8 core AMD Ryzen chip and a 1080p screen. It has all the ports you would ever need in this day and age and the battery life is good. I have never tried Windows on this laptop, so I cannot attest to how well it works with it. On Linux, I have not had any problems really. Everything, including the fingerprint reader, microphone, camera and touchpad, worked out of the box. I am currently running &lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
  on it, which might just be my favorite distro I have ever used. It is smooth, stable and polished. The touchpad gestures work well, it has a great release cycle and software is usually up to date. I am really happy with it and am not really missing something (besides photo and video editing software, which I am going to come to later). The only thing I really do not like about this laptop is the touchpad. It is awful. I used to be a mac user, so I have had a taste of the fancy fancy, but I have also tried an XPS 13 running Fedora 34 and the touchpad was so much better. It is not too much of a problem for me as I usually have my mouse with me everywhere anyway, but it is still an important thing to note.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_1.jpg&#34;
-         alt=&#34;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_1.jpg&#34;
+         alt=&#34;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -124,7 +41,8 @@
 &lt;h3 id=&#34;macbook-pro-15-inch-mid-2015&#34;&gt;
   MacBook Pro 15 inch, Mid 2015
   &lt;a class=&#34;heading-link&#34; href=&#34;#macbook-pro-15-inch-mid-2015&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I used to be a Mac user before switching to Linux about two years ago. This MacBook Pro is a great machine. The hardware is top notch, it has many ports, it is quite powerful for a 2015 laptop and still works great to this day. I am running it with the latest macOS Monterey and I am a bit of a sucker for the user interface to be honest. The reason why I have this laptop is that I am also a photographer and sometimes make videos. There are options on Linux such as &lt;a href=&#34;https://www.rawtherapee.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;RawTherapee&lt;/a&gt;
@@ -135,7 +53,8 @@
 &lt;h3 id=&#34;thinkpad-x230&#34;&gt;
   Thinkpad X230
   &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-x230&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://www.blackmagicdesign.com/products/davinciresolve/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad X230&lt;/a&gt;
@@ -143,16 +62,14 @@
  once I find an original one that does not cost as much as the laptop itself. I bought this laptop for three main reasons. The first one is the fact that it is just a really cool laptop in my opinion. The second is the fact that it is one of the few laptops that supports &lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
  out of the box (read the section further down for more information). The third reason is that it is one of the few laptops supported by the &lt;a href=&#34;https://www.coreboot.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Coreboot&lt;/a&gt;
  project (read more about this further down). Overall, this laptop has blown me away. It is a laptop from 2012 with a dual core CPU that cost less than the USB-C dock I use for my thinkpad. Still, it handles day to day usage no problem and all the virtualization needed to run Qubes OS. I have not tried it with a normal Linux distrubution yet, but I am sure that it will handle everything like a champ.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_3.jpg&#34;
-         alt=&#34;Corebooted Thinkpad X230 running Qubes OS and i3WM&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_3.jpg&#34;
+         alt=&#34;Corebooted Thinkpad X230 running Qubes OS and i3WM&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Corebooted Thinkpad X230 running Qubes OS and i3WM&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_2.jpg&#34;
-         alt=&#34;Closeup of the Thinkpad X230&amp;amp;rsquo;s swedish keyboard&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_2.jpg&#34;
+         alt=&#34;Closeup of the Thinkpad X230&amp;amp;rsquo;s swedish keyboard&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Closeup of the Thinkpad X230&amp;rsquo;s swedish keyboard&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -160,14 +77,16 @@
 &lt;h1 id=&#34;peripherals&#34;&gt;
   Peripherals
   &lt;a class=&#34;heading-link&#34; href=&#34;#peripherals&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;I have had some problems with RSI and other posture related pain over the past couple of years. These are some peripherals that really helped me a lot.&lt;/p&gt;
 &lt;h3 id=&#34;logitech-mx-ergo-mouse&#34;&gt;
   Logitech MX Ergo Mouse
   &lt;a class=&#34;heading-link&#34; href=&#34;#logitech-mx-ergo-mouse&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I love &lt;a href=&#34;https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.910-005178.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;this mouse&lt;/a&gt;
@@ -176,7 +95,8 @@
 &lt;h3 id=&#34;kinesis-advantage-2&#34;&gt;
   Kinesis Advantage 2
   &lt;a class=&#34;heading-link&#34; href=&#34;#kinesis-advantage-2&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://kinesis-ergo.com/shop/advantage2/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kinesis Advantage 2&lt;/a&gt;
@@ -185,28 +105,30 @@
 &lt;h3 id=&#34;monitor&#34;&gt;
   Monitor
   &lt;a class=&#34;heading-link&#34; href=&#34;#monitor&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;Sadly, I do not have an external monitor as I do not have a fixed office. Whenever I can, I just use some books to raise my laptop so that I can sit more upright and keep a good posture.&lt;/p&gt;
 &lt;h1 id=&#34;other-tech&#34;&gt;
   Other Tech
   &lt;a class=&#34;heading-link&#34; href=&#34;#other-tech&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;h3 id=&#34;google-pixel-4a&#34;&gt;
   Google Pixel 4a
   &lt;a class=&#34;heading-link&#34; href=&#34;#google-pixel-4a&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;My phone of choice is a Google Pixel 4a. I really do not like Google. I think they have too much power and are too big of a monopoly. They also do very questionable things. Sadly, their phones are the only ones supported by projects such as &lt;a href=&#34;https://calyxos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Calyx OS&lt;/a&gt;
  and &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
 , which is why I have one (read more about Calyx OS in the section below). It is a great phone overall. It&amp;rsquo;s not as expensive as many other phones nowadays, it has a great camera and is fast enough for my needs.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_4.jpg&#34;
-         alt=&#34;Google Pixel 4a running Calyx OS&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_4.jpg&#34;
+         alt=&#34;Google Pixel 4a running Calyx OS&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Google Pixel 4a running Calyx OS&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -214,20 +136,23 @@
 &lt;h3 id=&#34;ipad-pro-2018&#34;&gt;
   iPad Pro 2018
   &lt;a class=&#34;heading-link&#34; href=&#34;#ipad-pro-2018&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I bought the iPad Pro for uni a couple of years ago and it is a good piece of hardware and software. The Apple Pen work great, the battery life is good and the screen is really nice. I have been using it less and less lately though and I would like to get rid of it. It still comes in handy from time to time, especially for uni. Maybe I&amp;rsquo;ll sell it after university as I don&amp;rsquo;t like the closed nature of iPad OS.&lt;/p&gt;
 &lt;h1 id=&#34;noteworthy-operating-systems&#34;&gt;
   Noteworthy Operating Systems
   &lt;a class=&#34;heading-link&#34; href=&#34;#noteworthy-operating-systems&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;h3 id=&#34;fedora-34-gnome&#34;&gt;
   Fedora 34 Gnome
   &lt;a class=&#34;heading-link&#34; href=&#34;#fedora-34-gnome&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
@@ -236,7 +161,8 @@
 &lt;h3 id=&#34;qubes-os&#34;&gt;
   Qubes OS
   &lt;a class=&#34;heading-link&#34; href=&#34;#qubes-os&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
@@ -246,7 +172,8 @@
 &lt;h3 id=&#34;calyx-os&#34;&gt;
   Calyx OS
   &lt;a class=&#34;heading-link&#34; href=&#34;#calyx-os&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;This is one of my favorite things in the world right now. Calyx OS is a degoogled version of Android that is avialable for Google Pixel phones (which is kind of paradoxical but actually makes total sense). It maintains the security model of stock android (not improving on it like, for example, &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
@@ -257,7 +184,8 @@
 &lt;h3 id=&#34;skulls&#34;&gt;
   Skulls
   &lt;a class=&#34;heading-link&#34; href=&#34;#skulls&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;While not an operating system in and of itself, &lt;a href=&#34;https://github.com/merge/skulls&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Skulls&lt;/a&gt;
@@ -267,7 +195,8 @@
 &lt;h2 id=&#34;final-words&#34;&gt;
   Final words
   &lt;a class=&#34;heading-link&#34; href=&#34;#final-words&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;I hope you enjoyed reading about my personal tech setup. If you have any questions please feel free to contact me via email by taking this website&amp;rsquo;s subdomain at pm dot me.&lt;/p&gt;
@@ -283,14 +212,16 @@
       <description>&lt;h1 id=&#34;securing-your-online-accounts-with-bitwarden&#34;&gt;
   Securing your Online Accounts with Bitwarden
   &lt;a class=&#34;heading-link&#34; href=&#34;#securing-your-online-accounts-with-bitwarden&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;The combination of username and password has long been the standard way of authenticating users when they log into a website, service, etc. This combination is what keeps our personal messages with friends and family, our emails, our pictures and all the rest that is online from being accessed by everyone. They are the gatekeepers to our online presence which is why it is so important that they are secure. We are taught many things in school, but nobody ever told us how to choose a good password and how to secure our online accounts so it is obvious that most people don&amp;rsquo;t know how to do it. This is where this guide hopefully comes in handy.&lt;/p&gt;
 &lt;h2 id=&#34;1st-step-get-a-password-manager&#34;&gt;
   1st Step: Get a Password Manager
   &lt;a class=&#34;heading-link&#34; href=&#34;#1st-step-get-a-password-manager&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;The most important thing in my opinion is to have different passwords and possibly different emails and usernames for different websites. Since nowadays it is not unusual to have dozens of online accounts, it can be very hard to keep track of all login data. Here is where Password Managers come in. These are apps that can be installed on your phone, laptop or tablet where all your passwords are stored in one place. Some of them are more bare bones and don&amp;rsquo;t do a lot more than store passwords, others offer features like random password generation, password synchronization and password sharing. I have tried different password managers, but the best one I have found up until now has been Bitwarden. This password manager is Free and Open Source, but also offers paid plans for more advanced functionality. I recommend starting with the free version, which is more than enough in the beginning. You can always upgrade later.
@@ -300,14 +231,14 @@ Bitwarden is available on Android, IOS, Mac OS, Windows and Linux. It also offer
 &lt;h2 id=&#34;2nd-step-choose-a-strong-master-password&#34;&gt;
   2nd Step: Choose a strong Master Password
   &lt;a class=&#34;heading-link&#34; href=&#34;#2nd-step-choose-a-strong-master-password&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Once you have downloaded the Bitwarden App from the Google Play Store, Apple App Store, &lt;a href=&#34;https://mobileapp.bitwarden.com/fdroid/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;F-Droid&lt;/a&gt;
  or whatever store you might be using, you need to create an account. The master password in conjunction with your email address is what is needed to access your vault. The vault is where all of your passwords are stored. It goes without saying that this password needs to be extremely secure. One common misconception is that for a password to be secure it needs to be hard to remember and some weird combination of characters. This is true of your other passwords in your vault, but not for your master password. Instead of thinking of it as a pass&lt;strong&gt;word&lt;/strong&gt;, I would rather think of it as a pass&lt;strong&gt;phrase&lt;/strong&gt;. The way an attacker will crack your password is either by using a word list attack, a Brute-force attack or through Social Engineering. The latter is (possibly) mitigated by using things like 2 Factor Authentication (2FA), the former two are what a good passphrase should prevent. The longer your passphrase, the more possible combinations there exist and thus the longer it will take for a computer to crack it. What I do is I try to think of a silly but easy to remember phrase. An example could be: &amp;ldquo;&lt;em&gt;Fred Westerson walks on rotten Bananas&lt;/em&gt;&amp;rdquo;. I hope there is nobody out there called Fred Westerson, but for some reason that is what I came up with spontaneously. This passphrase should take around 10,826,447,514,211,228 centuries to crack. Pretty secure, right?&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_1.png&#34;
-         alt=&#34;Image showing the creation of a new account on Bitwarden&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_1.png&#34;
+         alt=&#34;Image showing the creation of a new account on Bitwarden&#34; width=&#34;400&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Image showing the creation of a new account on Bitwarden&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -315,28 +246,26 @@ Bitwarden is available on Android, IOS, Mac OS, Windows and Linux. It also offer
 &lt;h2 id=&#34;3rd-step-start-changing-your-passwords&#34;&gt;
   3rd Step: Start changing your passwords
   &lt;a class=&#34;heading-link&#34; href=&#34;#3rd-step-start-changing-your-passwords&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;This is probably the most tedious part since you need to go in and change every password from every online account you have. I suggest you do this step by step and change a password the next time you use a service.
 If you had to think about a new random password for each account, you&amp;rsquo;d run out of words to use fairly quickly. This is why Bitwarden (and other password managers) have a password generation feature. Just go into the app, create a new password and click on the circular arrows next to the password box. I suggest you to use a password that has around 25 characters and that uses numbers, upper and lower case letters as well as special symbols. This way you have a very secure password, but not too long so that it is impossible to type out if you cannot copy paste it once for some reason.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_2.png&#34;
-         alt=&#34;Your Vault the first time you start the application should look something like this. Click on Add an item to add a new entry to your vault.&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_2.png&#34;
+         alt=&#34;Your Vault the first time you start the application should look something like this. Click on Add an item to add a new entry to your vault.&#34; width=&#34;400&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Your Vault the first time you start the application should look something like this. Click on &lt;em&gt;Add an item&lt;/em&gt; to add a new entry to your vault.&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_3.png&#34;
-         alt=&#34;Type in the Name of the Service, your email/username you use for this account and click on the arrows to generate a new random password.&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_3.png&#34;
+         alt=&#34;Type in the Name of the Service, your email/username you use for this account and click on the arrows to generate a new random password.&#34; width=&#34;400&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Type in the Name of the Service, your email/username you use for this account and click on the arrows to generate a new random password.&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_4.png&#34;
-         alt=&#34;Toggle the types of characters you want your password to contain. I always toggle all four and set the length to 25 characters.&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_4.png&#34;
+         alt=&#34;Toggle the types of characters you want your password to contain. I always toggle all four and set the length to 25 characters.&#34; width=&#34;400&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Toggle the types of characters you want your password to contain. I always toggle all four and set the length to 25 characters.&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -344,26 +273,28 @@ If you had to think about a new random password for each account, you&amp;rsquo;
 &lt;h2 id=&#34;extra-tips-and-tricks&#34;&gt;
   Extra Tips and Tricks
   &lt;a class=&#34;heading-link&#34; href=&#34;#extra-tips-and-tricks&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;h3 id=&#34;change-your-autofill-service&#34;&gt;
   Change your autofill service
   &lt;a class=&#34;heading-link&#34; href=&#34;#change-your-autofill-service&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;If you want to make your life that much easier, change your default Auto fill Service to be Bitwarden. This way you get prompted to &amp;ldquo;Auto fill with Bitwarden&amp;rdquo; if you ever have to login somewhere.&lt;/p&gt;
 &lt;h4 id=&#34;on-ios&#34;&gt;
   On IOS
   &lt;a class=&#34;heading-link&#34; href=&#34;#on-ios&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h4&gt;
 &lt;p&gt;Go to Settings &amp;gt; Passwords &amp;amp; Accounts &amp;gt; Autofill Passwords &amp;gt; Choose Bitwarden from the list&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_5.png&#34;
-         alt=&#34;Autofill with Bitwarden on Iphone.&#34; width=&#34;400&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/passwords/image_5.png&#34;
+         alt=&#34;Autofill with Bitwarden on Iphone.&#34; width=&#34;400&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Autofill with Bitwarden on Iphone.&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -371,28 +302,32 @@ If you had to think about a new random password for each account, you&amp;rsquo;
 &lt;h4 id=&#34;on-android&#34;&gt;
   On Android
   &lt;a class=&#34;heading-link&#34; href=&#34;#on-android&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h4&gt;
 &lt;p&gt;Open the Bitwarden App &amp;gt; Click on Settings &amp;gt; Click on Auto-fill Service to enable it (follow the instructions) &amp;gt; go back to the settings and click on Auto-fill Accessibility Service to enable it (again follow the instructions)&lt;/p&gt;
 &lt;h3 id=&#34;install-the-extension-for-your-browser-on-your-laptop-or-desktop&#34;&gt;
   Install the extension for your browser on your Laptop or Desktop
   &lt;a class=&#34;heading-link&#34; href=&#34;#install-the-extension-for-your-browser-on-your-laptop-or-desktop&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;Do a quick DuckDuckGo Search (or Google Search if you are still using Google&amp;hellip;) for &amp;ldquo;Bitwarden Extension [Your Browser Name]&amp;rdquo; replacing the square brackets with the name of the browser you are using and install the extension. Please make sure that the extension is the original from the original developers (you can also tell that if it has like 50 downloads, it&amp;rsquo;s probably going to be fake) since that would really suck if you typed in your master password and Email in a fake version of the app.&lt;/p&gt;
 &lt;h3 id=&#34;enable-biometrics&#34;&gt;
   Enable Biometrics
   &lt;a class=&#34;heading-link&#34; href=&#34;#enable-biometrics&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;This is totally up to you. If you want to have a bit of an easier time, go to settings and turn on &amp;ldquo;Unlock with Biometrics&amp;rdquo; to use FaceID or your Fingerprint to unlock your vault. Be aware though, that this is going to make your Vault less secure if someone where to get his hands on your phone. You need to judge for yourself, if this is a worthwhile risk you want to accept. In my opinion, if you are not a high profile person that might be directly targeted (like maybe a Journalist, Lawyer, etc.) and forced to unlock your phone and password manager, you will be fine with this option turned on. But don&amp;rsquo;t quote me on that :wink:&lt;/p&gt;
 &lt;h3 id=&#34;for-the-nerds-and-techies-self-hosting&#34;&gt;
   For the Nerds and Techies: Self Hosting
   &lt;a class=&#34;heading-link&#34; href=&#34;#for-the-nerds-and-techies-self-hosting&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;Bitwarden can also be self hosted on a server of your choosing. Go &lt;a href=&#34;https://bitwarden.com/help/article/install-on-premise/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;here&lt;/a&gt;

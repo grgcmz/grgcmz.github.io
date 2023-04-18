@@ -1,75 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://grgcmz.github.io/categories/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-20T10:15:38+01:00</lastmod>
+  </url><url>
     <loc>https://grgcmz.github.io/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/categories/knowledge/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/posts/nmap/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/posts/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/tags/security/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/tags/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://grgcmz.github.io/tags/tools/</loc>
-    <lastmod>2022-03-02T19:01:09+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-11-20T10:15:38+01:00</lastmod>
+  </url><url>
     <loc>https://grgcmz.github.io/posts/personal-tech/</loc>
     <lastmod>2021-11-20T10:15:38+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grgcmz.github.io/categories/opinion/</loc>
     <lastmod>2021-11-20T10:15:38+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grgcmz.github.io/posts/</loc>
+    <lastmod>2021-11-20T10:15:38+01:00</lastmod>
+  </url><url>
     <loc>https://grgcmz.github.io/tags/privacy/</loc>
     <lastmod>2021-11-20T10:15:38+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grgcmz.github.io/tags/security/</loc>
+    <lastmod>2021-11-20T10:15:38+01:00</lastmod>
+  </url><url>
+    <loc>https://grgcmz.github.io/tags/</loc>
+    <lastmod>2021-11-20T10:15:38+01:00</lastmod>
+  </url><url>
     <loc>https://grgcmz.github.io/about/</loc>
     <lastmod>2021-08-24T19:24:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grgcmz.github.io/categories/guides/</loc>
     <lastmod>2021-05-26T22:52:53+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grgcmz.github.io/posts/passwords/</loc>
     <lastmod>2021-05-26T22:52:53+02:00</lastmod>
   </url>
-  
 </urlset>

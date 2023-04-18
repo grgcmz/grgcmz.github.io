@@ -17,22 +17,23 @@
 &lt;h1 id=&#34;laptops&#34;&gt;
   Laptops
   &lt;a class=&#34;heading-link&#34; href=&#34;#laptops&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;As I am always working in different places, moving between lectures, work and coffee shops, I do not own a desktop computer. I do all of my work on a laptop (actually, many laptops because I really like switching around). Here is a list of my main machines.&lt;/p&gt;
 &lt;h3 id=&#34;thinkpad-t14-gen-1&#34;&gt;
   Thinkpad T14 Gen 1
   &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-t14-gen-1&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;My main machine is a &lt;a href=&#34;https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14-amd-g1/22tpt14t4a2&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad T14 Gen 1 AMD&lt;/a&gt;
 . It has 32GB of RAM, a 1TB NVMe SSD, an 8 core AMD Ryzen chip and a 1080p screen. It has all the ports you would ever need in this day and age and the battery life is good. I have never tried Windows on this laptop, so I cannot attest to how well it works with it. On Linux, I have not had any problems really. Everything, including the fingerprint reader, microphone, camera and touchpad, worked out of the box. I am currently running &lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
  on it, which might just be my favorite distro I have ever used. It is smooth, stable and polished. The touchpad gestures work well, it has a great release cycle and software is usually up to date. I am really happy with it and am not really missing something (besides photo and video editing software, which I am going to come to later). The only thing I really do not like about this laptop is the touchpad. It is awful. I used to be a mac user, so I have had a taste of the fancy fancy, but I have also tried an XPS 13 running Fedora 34 and the touchpad was so much better. It is not too much of a problem for me as I usually have my mouse with me everywhere anyway, but it is still an important thing to note.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_1.jpg&#34;
-         alt=&#34;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_1.jpg&#34;
+         alt=&#34;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Thinkpad T14 Gen 1, Kinesis Advantage 2 and Logitech MX Ergo&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -40,7 +41,8 @@
 &lt;h3 id=&#34;macbook-pro-15-inch-mid-2015&#34;&gt;
   MacBook Pro 15 inch, Mid 2015
   &lt;a class=&#34;heading-link&#34; href=&#34;#macbook-pro-15-inch-mid-2015&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I used to be a Mac user before switching to Linux about two years ago. This MacBook Pro is a great machine. The hardware is top notch, it has many ports, it is quite powerful for a 2015 laptop and still works great to this day. I am running it with the latest macOS Monterey and I am a bit of a sucker for the user interface to be honest. The reason why I have this laptop is that I am also a photographer and sometimes make videos. There are options on Linux such as &lt;a href=&#34;https://www.rawtherapee.com/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;RawTherapee&lt;/a&gt;
@@ -51,7 +53,8 @@
 &lt;h3 id=&#34;thinkpad-x230&#34;&gt;
   Thinkpad X230
   &lt;a class=&#34;heading-link&#34; href=&#34;#thinkpad-x230&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://www.blackmagicdesign.com/products/davinciresolve/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Thinkpad X230&lt;/a&gt;
@@ -59,16 +62,14 @@
  once I find an original one that does not cost as much as the laptop itself. I bought this laptop for three main reasons. The first one is the fact that it is just a really cool laptop in my opinion. The second is the fact that it is one of the few laptops that supports &lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
  out of the box (read the section further down for more information). The third reason is that it is one of the few laptops supported by the &lt;a href=&#34;https://www.coreboot.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Coreboot&lt;/a&gt;
  project (read more about this further down). Overall, this laptop has blown me away. It is a laptop from 2012 with a dual core CPU that cost less than the USB-C dock I use for my thinkpad. Still, it handles day to day usage no problem and all the virtualization needed to run Qubes OS. I have not tried it with a normal Linux distrubution yet, but I am sure that it will handle everything like a champ.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_3.jpg&#34;
-         alt=&#34;Corebooted Thinkpad X230 running Qubes OS and i3WM&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_3.jpg&#34;
+         alt=&#34;Corebooted Thinkpad X230 running Qubes OS and i3WM&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Corebooted Thinkpad X230 running Qubes OS and i3WM&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_2.jpg&#34;
-         alt=&#34;Closeup of the Thinkpad X230&amp;amp;rsquo;s swedish keyboard&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_2.jpg&#34;
+         alt=&#34;Closeup of the Thinkpad X230&amp;amp;rsquo;s swedish keyboard&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Closeup of the Thinkpad X230&amp;rsquo;s swedish keyboard&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -76,14 +77,16 @@
 &lt;h1 id=&#34;peripherals&#34;&gt;
   Peripherals
   &lt;a class=&#34;heading-link&#34; href=&#34;#peripherals&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;I have had some problems with RSI and other posture related pain over the past couple of years. These are some peripherals that really helped me a lot.&lt;/p&gt;
 &lt;h3 id=&#34;logitech-mx-ergo-mouse&#34;&gt;
   Logitech MX Ergo Mouse
   &lt;a class=&#34;heading-link&#34; href=&#34;#logitech-mx-ergo-mouse&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I love &lt;a href=&#34;https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.910-005178.html&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;this mouse&lt;/a&gt;
@@ -92,7 +95,8 @@
 &lt;h3 id=&#34;kinesis-advantage-2&#34;&gt;
   Kinesis Advantage 2
   &lt;a class=&#34;heading-link&#34; href=&#34;#kinesis-advantage-2&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;The &lt;a href=&#34;https://kinesis-ergo.com/shop/advantage2/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Kinesis Advantage 2&lt;/a&gt;
@@ -101,28 +105,30 @@
 &lt;h3 id=&#34;monitor&#34;&gt;
   Monitor
   &lt;a class=&#34;heading-link&#34; href=&#34;#monitor&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;Sadly, I do not have an external monitor as I do not have a fixed office. Whenever I can, I just use some books to raise my laptop so that I can sit more upright and keep a good posture.&lt;/p&gt;
 &lt;h1 id=&#34;other-tech&#34;&gt;
   Other Tech
   &lt;a class=&#34;heading-link&#34; href=&#34;#other-tech&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;h3 id=&#34;google-pixel-4a&#34;&gt;
   Google Pixel 4a
   &lt;a class=&#34;heading-link&#34; href=&#34;#google-pixel-4a&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;My phone of choice is a Google Pixel 4a. I really do not like Google. I think they have too much power and are too big of a monopoly. They also do very questionable things. Sadly, their phones are the only ones supported by projects such as &lt;a href=&#34;https://calyxos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Calyx OS&lt;/a&gt;
  and &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
 , which is why I have one (read more about Calyx OS in the section below). It is a great phone overall. It&amp;rsquo;s not as expensive as many other phones nowadays, it has a great camera and is fast enough for my needs.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_4.jpg&#34;
-         alt=&#34;Google Pixel 4a running Calyx OS&#34; width=&#34;1000&#34;/&gt; &lt;figcaption&gt;
+&lt;figure&gt;&lt;img src=&#34;https://grgcmz.github.io/img/02_tech/image_4.jpg&#34;
+         alt=&#34;Google Pixel 4a running Calyx OS&#34; width=&#34;1000&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Google Pixel 4a running Calyx OS&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -130,20 +136,23 @@
 &lt;h3 id=&#34;ipad-pro-2018&#34;&gt;
   iPad Pro 2018
   &lt;a class=&#34;heading-link&#34; href=&#34;#ipad-pro-2018&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;I bought the iPad Pro for uni a couple of years ago and it is a good piece of hardware and software. The Apple Pen work great, the battery life is good and the screen is really nice. I have been using it less and less lately though and I would like to get rid of it. It still comes in handy from time to time, especially for uni. Maybe I&amp;rsquo;ll sell it after university as I don&amp;rsquo;t like the closed nature of iPad OS.&lt;/p&gt;
 &lt;h1 id=&#34;noteworthy-operating-systems&#34;&gt;
   Noteworthy Operating Systems
   &lt;a class=&#34;heading-link&#34; href=&#34;#noteworthy-operating-systems&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h1&gt;
 &lt;h3 id=&#34;fedora-34-gnome&#34;&gt;
   Fedora 34 Gnome
   &lt;a class=&#34;heading-link&#34; href=&#34;#fedora-34-gnome&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://getfedora.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Fedora 34&lt;/a&gt;
@@ -152,7 +161,8 @@
 &lt;h3 id=&#34;qubes-os&#34;&gt;
   Qubes OS
   &lt;a class=&#34;heading-link&#34; href=&#34;#qubes-os&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.qubes-os.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Qubes OS&lt;/a&gt;
@@ -162,7 +172,8 @@
 &lt;h3 id=&#34;calyx-os&#34;&gt;
   Calyx OS
   &lt;a class=&#34;heading-link&#34; href=&#34;#calyx-os&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;This is one of my favorite things in the world right now. Calyx OS is a degoogled version of Android that is avialable for Google Pixel phones (which is kind of paradoxical but actually makes total sense). It maintains the security model of stock android (not improving on it like, for example, &lt;a href=&#34;https://grapheneos.org/&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Graphene OS&lt;/a&gt;
@@ -173,7 +184,8 @@
 &lt;h3 id=&#34;skulls&#34;&gt;
   Skulls
   &lt;a class=&#34;heading-link&#34; href=&#34;#skulls&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;While not an operating system in and of itself, &lt;a href=&#34;https://github.com/merge/skulls&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Skulls&lt;/a&gt;
@@ -183,7 +195,8 @@
 &lt;h2 id=&#34;final-words&#34;&gt;
   Final words
   &lt;a class=&#34;heading-link&#34; href=&#34;#final-words&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;I hope you enjoyed reading about my personal tech setup. If you have any questions please feel free to contact me via email by taking this website&amp;rsquo;s subdomain at pm dot me.&lt;/p&gt;
